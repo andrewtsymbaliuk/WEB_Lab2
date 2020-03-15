@@ -1,0 +1,77 @@
+    body {
+        background-color: #85FFB7;
+        padding-left: 132px;
+        padding-top: 115px;
+        color: #212121;
+        font-family: Montserrat;
+    }
+    
+    h1 {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        margin: 0;
+        margin-bottom: 70px;
+    }
+    
+    h2 {
+        margin: 0;
+        margin-bottom: 60px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    .inputs-block {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 60px;
+    }
+    
+    .input-item {
+        margin-right: 40px;
+        max-width: 255px;
+    }
+    
+    .input-item__title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    input {
+        background: #FFF;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        border: none;
+        height: 56px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-family: Montserrat;
+        line-height: 20px;
+        padding-left: 18px;
+        width: 100%;
+    }
+    
+    #add-word__btn {
+        background: #FFF;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        border: none;
+        height: 56px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 20px;
+        width: 141px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+    
+    #add-word__btn:hover {
+        background: #0DFF70;
+    }
