@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab 2 | Vocabulary</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap&subset=cyrillic" rel="stylesheet">
 
 </head>
 
@@ -16,28 +16,38 @@
     <div class="inputs-block">
         <div class="input-item">
             <div class="input-item__title">
-                <p>Слово</p>
+                <p>Введіть слово</p>
             </div>
-            <input type="text" id="eng" class="input">
+            <input type="text" id="eng" class="input" placeholder="English">
         </div>
         <div class="input-item">
             <div class="input-item__title">
-                <p>Переклад</p>
+                <p>Введіть слово</p>
             </div>
-            <input type="text" id="ukr" class="input">
-        </div>
-        <div class="btn__wrapper">
-            <button id="add-word__btn">
-                <p>Зберегти</p>
-            </button>
+            <input type="text" id="ukr" class="input" placeholder="Українською">
         </div>
     </div>
-    <h2>Збережені слова</h2>
+    <div class="btn__wrapper">
+        <button id="add-word__btn" class="button">
+            <p>Додати</p>
+        </button>
+
+        <button id="search-word__btn" class="button">
+            <p>Знайти</p>
+        </button>
+    </div>
+    <div class="btn__wrapper">
+        <button id="edit-word__btn" class="button">
+            <p>Редагувати</p>
+        </button>
+        <button id="delete-word__btn" class="button">
+            <p>Видалити</p>
+        </button>
+    </div>
     <div class="table-block">
-        <table id="table">
-        </table>
+        <table id="table"></table>
     </div>
-    <script type="module " src="js/main.js ">
+    <script type="module" src="js/main.js">
     </script>
 </body>
 
