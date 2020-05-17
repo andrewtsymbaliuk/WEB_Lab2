@@ -6,39 +6,23 @@ body {
     font-family: Montserrat;
 }
 
-h1 {
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    margin: 0;
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-family: Montserrat;
-    margin: 0;
-    margin-bottom: 30px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 22px;
-}
-
-.inputs-block {
-    display: flex;
-    align-items: flex-end;
-}
-
-.input-item {
-    margin-right: 40px;
-    max-width: 255px;
-}
-
-.input-item__title {
+button {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border: none;
+    height: 46px;
+    border-radius: 7px;
     font-size: 18px;
-    line-height: 22px;
-    font-weight: 500;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 20px;
+    width: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    color: #131313;
+    margin-right: 25px;
 }
 
 input {
@@ -56,42 +40,48 @@ input {
     align-items: center;
     justify-content: center;
     color: #131313;
+    margin-bottom: 45px;
 }
 
-.btn__wrapper {
-    display: flex;
-}
-
-button {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    border: none;
-    height: 56px;
-    border-radius: 7px;
-    font-size: 18px;
+h1 {
     font-family: Montserrat;
-    font-weight: 600;
-    line-height: 20px;
-    width: 141px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    color: #131313;
-    margin-right: 25px;
-    margin-top: 45px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 46px;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
-.btn-table {
-    margin: 5px 0 5px 0;
+h2 {
+    font-family: Montserrat;
+    margin: 0;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 22px;
 }
 
-.table-block {
+.words-table {
     margin-top: 45px;
     font-size: 20px;
 }
 
-.eng-word {
+.text {
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+.textRow {
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+.getWordUkrInput {
     font-weight: 600;
     font-size: 30px;
     line-height: 43px;
@@ -103,7 +93,7 @@ button {
     margin: 50px 0;
 }
 
-.ukr-word {
+.getWordEngInput {
     font-style: italic;
     font-weight: 500;
     font-size: 30px;
@@ -116,8 +106,20 @@ button {
     margin: 50px 0;
 }
 
-.error {
-    border: 2px solid #EC7063;
+.inputs-block {
+    display: flex;
+    align-items: flex-end;
+}
+
+.input-item {
+    margin-right: 40px;
+    max-width: 255px;
+}
+
+.input-item__title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
 }
 
 table {
@@ -136,24 +138,31 @@ td {
     border-bottom: 1px solid #131313;
 }
 
-#search-word__btn:hover {
-    background: #D1A4FF;
+.text {
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 46px;
 }
 
-#add-word__btn:hover {
-    background: #82E0AA;
+#addButton {
+    margin-left: 438px;
+    height: 50px;
+    width: 130px;
 }
 
-#edit-word__btn:hover {
+#addButton:hover {
     background: #F7DC6F;
 }
 
-#delete-word__btn:hover {
-    background: #EC7063;
+#editButtonUkr:hover {
+    background: rgb(173, 106, 218);
 }
 
-@media only screen and (max-width: 740px) {
-    body {
-        padding-left: 20px;
-    }
+#editButtonEng:hover {
+    background: rgb(218, 106, 209);
+}
+
+#delButton:hover {
+    background: #EC7063;
 }

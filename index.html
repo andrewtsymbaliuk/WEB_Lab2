@@ -1,44 +1,48 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Lab 2 | Dictionary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lab 2 | Dictionary</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="image.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-
 </head>
 
 <body>
-    <h1>Англо-український словник</h1>
-    <div class="inputs-block">
-        <div class="input-item">
-            <div class="input-item__title">
-                <p>Слово</p>
+    <div class="wrapper">
+        <h1>Dictionary</h1>
+        <div class="inputs-block">
+            <div class="input-item">
+                <div class="input-item__title">
+                    <p>Word</p>
+                </div>
+                <input type="text" id="getWordUkrInput" class="input" placeholder="In English" autofocus>
             </div>
-            <input type="text" id="eng" class="input" placeholder="In English">
-        </div>
-        <div class="input-item">
-            <div class="input-item__title">
-                <p>Переклад</p>
+            <div class="input-item">
+                <div class="input-item__title">
+                    <p>Translate</p>
+                </div>
+                <input type="text" id="getWordEngInput" class="input" placeholder="Українською">
             </div>
-            <input type="text" id="ukr" class="input" placeholder="Українською">
         </div>
-    </div>
-    <div class="btn__wrapper">
-        <button id="add-word__btn" class="button">
-            <p>Додати</p>
+        <button id="addButton" type="button">
+            Add
         </button>
+        <div class="words-table">
+            <h2>Dictionary</h2>
+            <table id="main-table" class="table">
+                <tr>
+                    <td>
+                        <p class=" text">Тут будуть збережені слова</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div class="table-block">
-        <h2>Словник</h2>
-        <table id="table"></table>
-    </div>
-    <script type="module" src="js/main.js">
-    </script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
